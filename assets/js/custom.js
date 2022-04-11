@@ -3,7 +3,6 @@
       console.log("This is custom.js file");
       window.addEventListener('message', function (eventData) {
         console.log("CHECKING FOR EVENT : Custom");
-          alert('Event came');
         console.log(eventData);
         try {
             const mainEvent = JSON.parse(eventData.data);
