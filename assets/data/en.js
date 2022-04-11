@@ -74,29 +74,35 @@ var config = {
             "volume" : "2 Ltr",
             "items": [
                 {
-                    "name" : "Kinley 5 case offer",
-                    "description" : "7.5 fl oz, 10 pack",
-                    "price" : "$14.95",
-                    "icon" : "/coke/assets/images/svg/coke_xl.svg"
-                },
-                {
-                    "name" : "Kinley 5 case offer",
-                    "description" : "7.5 fl oz, 10 pack",
-                    "price" : "$14.95",
-                    "icon" : "/coke/assets/images/svg/sprite_xl.svg"
-                },
-                {
-                    "name" : "Kinley 5 case offer",
-                    "description" : "7.5 fl oz, 10 pack",
-                    "price" : "$14.95",
-                    "icon" : "/coke/assets/images/svg/fanta_xl.svg"
-                },
-                {
-                    "name" : "Kinley 5 case offer",
-                    "description" : "7.5 fl oz, 10 pack",
-                    "price" : "$14.95",
-                    "icon" : "/coke/assets/images/svg/coke_zero_xl.svg"
-                }
+					"name": "Coca-Cola 400ml",
+					"description": "7 Bottle",
+					"price": "644",
+          "icon": "https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png"
+				},
+				{
+					"name": "Sprite 400ml",
+					"description": "7 Bottle",
+					"price": "644",
+          "icon": "https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png"
+				},
+				{
+					"name": "Fanta Orange 400ml",
+					"description": "4 Bottle",
+					"price": "368",
+          "icon": "https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png"
+				},
+				{
+					"name": "Fanta Cream Soda 400ml",
+					"description": "3 Bottle",
+					"price": "276",
+          "icon": "https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png"
+				},
+				{
+					"name": "Fanta Portello 400ml",
+					"description": "3 Bottle",
+					"price": "276",
+          "icon": "https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png"
+				}
             ] 
         },
         {
