@@ -52,8 +52,11 @@ function insertSearchBar() {
 }
 
 function insertTabContainer() {
+    console.log("Inside insertTabContainer =>", config);
+    console.log("Inside insertTabContainer 1 =>", config.tabs_section);
     $("#tab_container").prepend(`<p class="title">${config.tabs_section.tabs_title}</p>`)
     config.tabs_section.tabs.map((val, tabNum) => {
+        console.log("Inside insertTabContainer  2 =>", val, tabNum);
         let classname = val.active ? "'grid__item active'" : "'grid__item'";
         $("#griddy").append(`
             <div id=${"tab_grid_item" + tabNum} class=${classname} onclick="switchTabs(${tabNum})">
