@@ -1,7 +1,7 @@
 var config = {};
 console.log('This is config in ==> en.js file', config);
-console.log('This is config in ==> window.config  ==> en.js file', window.config);
-console.log('This is config in ==> parent.window.config ==> en.js file', parent.window.config);
+// console.log('This is config in ==> window.config  ==> en.js file', window.config);
+// console.log('This is config in ==> parent.window.config ==> en.js file', parent.window.config);
 var config = {
     "search" : {
         "placeholder" : "Search for beverage..."
