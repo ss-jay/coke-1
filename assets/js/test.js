@@ -20,7 +20,7 @@
                     config = mainEvent.data.data;
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
-                    window.config = config;
+                    parent.window.config = config;
                     let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
                     myiframe.contentWindow.postMessage(JSON.stringify({
                         event_code: 'all_labels', data: JSON.stringify({
