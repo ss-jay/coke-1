@@ -23,10 +23,10 @@
                     window.config = config;
                     let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
                     myiframe.contentWindow.postMessage(JSON.stringify({
-                        event_code: 'hello', data: JSON.stringify({
+                        event_code: 'all_labels', data: JSON.stringify({
                             event: {
-                                code: "personalinfo",
-                                data: 'Hi there user'
+                                code: "all_labels",
+                                data: mainEvent.data.data
                             }
                         })
                     }), '*');
