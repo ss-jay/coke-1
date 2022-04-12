@@ -28,12 +28,19 @@
     <!-- Custom javascript -->
 <!--     <script type="text/javascript" src="/coke/assets/data/en.js"></script> -->
 	<script>
-// 		 apiCall();
-		console.log("Flow comes here -- ")
-		console.log("Flow comes here --  123", window.parent);
-		const windowObj = window.parent;
-		console.log("windowObj.apiCall --  123", windowObj.apiCall, typeof windowObj.apiCall);
-		console.log('**** window.parent.apiCall ***', window.parent.apiCall, typeof window.parent.apiCall);
+		$.ajax({
+		    type: "GET", //rest Type
+		    url: "http://34.101.209.236:3000/cocacola",
+		    async: false,
+		    contentType: "application/json",
+			headers: {
+				"x-api-key": "odkqIZ7DTSWG5QbCV0fsqp2T8T9ItKBhEWhm3apZ",
+				"url": "https://app.yellowmessenger.com/api/data/data/records/0-10?bot=x1649164306069&collection=category_images"
+			},
+		    success: function (msg) {
+			    console.log("Data => ", msg);                
+		    }
+		});
 	</script>
     <script type="text/javascript" src="/coke/assets/js/home.js"></script>
 	
