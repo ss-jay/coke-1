@@ -1,7 +1,7 @@
 (function () {
     setTimeout(() => {
          loadPageContent('homepage');
-    }, 1500);
+    }, 2000);
 })();
 
 function loadPageContent(page) {
