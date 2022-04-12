@@ -1,6 +1,10 @@
+window.addEventListener('message', function (eventData) {
+    console.log(" ******* Inside custom.js file ******* ")
+});
 (function () {
     setTimeout(() => {
          loadPageContent('homepage');
+
     }, 2000);
 })();
 
