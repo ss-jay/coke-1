@@ -1,4 +1,4 @@
-var config = window.config;
+var config = {};
 console.log('This is config in ==> en.js file', config);
 var config = {
     "search" : {
