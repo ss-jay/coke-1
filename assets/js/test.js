@@ -21,6 +21,15 @@
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
                     window.config = config;
+                    let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
+                    myiframe.contentWindow.postMessage(JSON.stringify({
+                        event_code: 'hello', data: JSON.stringify({
+                            event: {
+                                code: "personalinfo",
+                                data: 'Hi there user'
+                            }
+                        })
+                    }), '*');
                 }
                 console.log("AFTER :: page is loading");
             }
