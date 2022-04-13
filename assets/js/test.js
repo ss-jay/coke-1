@@ -16,14 +16,15 @@ window.addEventListener('message', function (eventData) {
     console.log("test js file called");
     try {
         console.table('Data----------------->>>', eventData.data);
-        if (eventData?.event_code == 'custom-event' && eventData?.data?.code == "all_lables") {
+        let parsedData = JSON.parse(eventData.data)
+        if (parsedData?.event_code == 'custom-event' && parsedData?.data?.code == "all_lables") {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
             document.getElementById('ymIframe').contentWindow.postMessage({
                 event_code: 'ym-client-event',
                 data: {
                     event: {
                         code: "configuration",
-                        data: eventData.data.data
+                        data: parsedData.data.data
                     }
                 }
             }, '*');
