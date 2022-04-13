@@ -8,9 +8,9 @@ window.addEventListener('message', function (eventData) {
         console.log("\n\n\n\n\n\n\n HEYYYYYYYYYYYYYYYYYYY \n\n\n\n\n\n\n\n");
         console.log(parsedEventData);
 	window.config = parsedEventData.data;
-  	setTimeout(() => {
+//   	setTimeout(() => {
          	loadPageContent("homepage")
-     	}, 500);
+//      	}, 500);
     }
 });
 
