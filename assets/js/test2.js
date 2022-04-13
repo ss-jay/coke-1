@@ -10,7 +10,7 @@ parent.addEventListener('message', function (e) {
 
 
 window.addEventListener('message', function (e) {
-    console.log("local testing 2 ashish case 2 ", e.data);
+    console.log("1.1 => ", e.data);
 //     console.log("======= > ", window);
 
 //     console.log("======= > ", document);
