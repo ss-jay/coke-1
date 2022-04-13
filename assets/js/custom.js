@@ -1,9 +1,9 @@
 // Original ashish's code
-(function () {
-    setTimeout(() => {
-        loadPageContent("homepage")
-    }, 500);
-})();
+// (function () {
+//     setTimeout(() => {
+//         loadPageContent("homepage")
+//     }, 500);
+// })();
 
 function loadPageContent(page) {
     if(page === "homepage") {
