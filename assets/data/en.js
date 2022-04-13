@@ -1,11 +1,11 @@
 var config = {};
 
-// window.addEventListener('message', function (e) {
-//     console.log("Get the sent data ", e);
-//     const data = e.data;
-//     console.log("received data from parent iframe ", data);
+window.addEventListener('message', function (e) {
+    console.log("  ************ Get the sent data ************** ");
+    const data = JSON.parse(e.data);
+    console.log("received data from parent iframe ", data);
    
-// });
+});
 
 // console.log('This is config in ==> en.js file', config);
 
