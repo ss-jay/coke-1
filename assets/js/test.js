@@ -21,15 +21,15 @@
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
                     parent.window.config = config;
-                    let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
-                    myiframe.contentWindow.postMessage(JSON.stringify({
-                        event_code: 'all_labels', data: JSON.stringify({
-                            event: {
-                                code: "all_labels",
-                                data: mainEvent.data.data
-                            }
-                        })
-                    }), '*');
+//                     let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
+//                     myiframe.contentWindow.postMessage(JSON.stringify({
+//                         event_code: 'all_labels', data: JSON.stringify({
+//                             event: {
+//                                 code: "all_labels",
+//                                 data: mainEvent.data.data
+//                             }
+//                         })
+//                     }), '*');
                 }
                 console.log("AFTER :: page is loading");
             }
