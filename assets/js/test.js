@@ -13,12 +13,12 @@
 
 
 window.addEventListener('message', function(eventData) {
-    console.log('onload---->')
-    console.log(eventData);
+    console.log("test js file called");
     try{
-        console.error( 'Data----------------->>>',eventData.data);
+        console.table( 'Data----------------->>>', eventData.data);
         if(eventData.data == 'custom-event') {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
+
             document.getElementById('ymIframe').contentWindow.postMessage("testing ashish", '*');
            return;
         }
@@ -26,5 +26,4 @@ window.addEventListener('message', function(eventData) {
         console.log(error);
         return;
     }
-    
 }, false);
