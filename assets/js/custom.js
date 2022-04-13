@@ -11,7 +11,7 @@ function loadPageContent(page, data) {
     config = data;
     console.log("page -- > ", page);
     if(page === "homepage") {
-        insertSearchBar();
+        insertSearchBar(data);
         insertTabContainer();
         insertPromotionsContainer();
         insertFilterBar();
@@ -20,10 +20,10 @@ function loadPageContent(page, data) {
     }
 }
 
-function insertSearchBar() {
-    console.log("value of config -- > ", config);
+function insertSearchBar(data) {
+    console.log("value of config -- > ", data);
     console.log("document.getElementById('search_input') --> ", document.getElementById("search_input"))
-    document.getElementById("search_input").placeholder = config.search.placeholder;
+    document.getElementById("search_input").placeholder = data.search.placeholder;
 }
 
 function insertTabContainer() {
