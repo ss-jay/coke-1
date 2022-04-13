@@ -2,6 +2,8 @@ var config = {};
 
 window.addEventListener('message', function (e) {
     // Get the sent data
+    console.log("Get the sent data ", e);
+
     const data = e.data;
     console.log("received data from parent iframe ", data);
     // If you encode the message in JSON before sending them,
@@ -10,6 +12,7 @@ window.addEventListener('message', function (e) {
 });
 
 console.log('This is config in ==> en.js file', config);
+
 var config = {
     "search" : {
         "placeholder" : "Search for beverage..."
