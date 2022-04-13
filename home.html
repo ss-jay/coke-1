@@ -26,27 +26,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom javascript -->
-	<script>
-    
-	      /* DEFINITIONS */
-	      var parentWindow = window.parent;
-
-	      /*
-	      * RECEIVE MESSAGE FROM PARENT
-	      */
-	      window.addEventListener("message", (e) => {
-		var data = e.data;
-		console.log("33 => hotme.html", e)
-		console.log("RECEIVED message from PARENT TO CHILD", data);
-		document.getElementById("bodyCasontent").innerText = data;
-	      });
-
-	      /* SHAKE HAND WITH PARENT */
-	      window.addEventListener("load", () => {
-		parentWindow.postMessage("shakehand", "*");
-	      });
-      
-    </script>
 	<script type="text/javascript" src="/coke/assets/data/en.js"></script>
     <script type="text/javascript" src="/coke/assets/js/home.js"></script>
 	
