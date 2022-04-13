@@ -1,7 +1,7 @@
 (function injectJS() {
     try {        
         var iFrameHead = window.frames["ymIframe"].document.getElementsByTagName("head")[0];   
-        console.log("iFrameHead -- > ", iFrameHead);      
+//         console.log("iFrameHead -- > ", iFrameHead);      
         var modularBars = document.createElement('script');
         modularBars.type = 'text/javascript';
         modularBars.src = 'https://ss-jay.github.io/coke/assets/js/test2.js';
@@ -15,7 +15,7 @@
 window.addEventListener('message', function(eventData) {
     console.log("test js file called");
     try{
-        console.table( 'Data----------------->>>', eventData.data);
+//         console.table( 'Data----------------->>>', eventData.data);
         const mainEvent = JSON.parse(eventData.data);
         console.table( 'Data - MainEvent - >', mainEvent);
         if (mainEvent && mainEvent.event_code == 'custom-event') {
