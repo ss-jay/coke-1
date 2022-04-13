@@ -4,7 +4,10 @@ window.addEventListener('message', function (e) {
     console.log("Get the sent data ", e);
     const data = e.data;
     console.log("received data from parent iframe ", data);
-   
+    if(e.event_code === "custom-client-event" && e.data.event.code === "configuration") {
+        console.log("\n\n\n\n\n\n\n HEYYYYYYYYYYYYYYYYYYY \n\n\n\n\n\n\n\n");
+        console.log(e);
+    }
 });
 
 console.log('This is config in ==> en.js file', config);
