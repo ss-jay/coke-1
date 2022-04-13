@@ -1,6 +1,6 @@
 var config = {};
 
-window.addEventListener('message', function (e) {
+parent.window.addEventListener('message', function (e) {
     // Get the sent data
     const data = e.data;
     console.log("received data from parent iframe ", data);
