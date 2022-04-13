@@ -7,7 +7,7 @@ window.addEventListener('message', function (eventData) {
     if(parsedEventData.event_code === "custom-child-client-event") {
         console.log("\n\n\n\n\n\n\n HEYYYYYYYYYYYYYYYYYYY \n\n\n\n\n\n\n\n");
         console.log(parsedEventData);
-	parent.window.config = parsedEventData.data;
+	window.config = parsedEventData.data;
 //   	setTimeout(() => {
          	loadPageContent("homepage")
 //      	}, 500);
