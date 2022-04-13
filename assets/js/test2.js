@@ -18,7 +18,7 @@ window.addEventListener('message', function (e) {
 
     if (mainEvent && mainEvent.message.event_code == 'custom-event') {
         console.log("1.2 - test2.js ==> ,", mainEvent.message);
-        if (mainEvent.data.code == 'all_lables') {
+        if (mainEvent.message.data.code == 'all_lables') {
             document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: mainEvent.message.data.data }), '*');
         }
     }
