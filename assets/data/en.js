@@ -7,6 +7,7 @@ window.addEventListener('message', function (e) {
    
 });
 
+console.log("window.config in en.js file ==> ", window.config);
 // console.log('This is config in ==> en.js file', config);
 
 // var config = {
