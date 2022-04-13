@@ -12,5 +12,5 @@ parent.addEventListener('message', function (e) {
 window.addEventListener('message', function (e) {
     console.log("local test 2 file called --> ", e)
     console.log("local testing 2 ashish case 2 ", e.data);
-    console.log(window.frames);
+    console.log("======= > ", window);
 });
