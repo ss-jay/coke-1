@@ -19,6 +19,7 @@ function loadPageContent(page) {
 }
 
 function insertSearchBar() {
+    console.log("value of config -- > ", config);
     document.getElementById("search_input").placeholder = config.search.placeholder;
 }
 
