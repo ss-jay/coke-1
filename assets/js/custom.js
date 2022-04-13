@@ -1,5 +1,6 @@
 (function () {
     setTimeout(() => {
+        loadPageContent('homepage');
       console.log("This is custom.js file");
       window.addEventListener('message', function (eventData) {
         console.log("CHECKING FOR EVENT : Custom");
@@ -20,7 +21,6 @@
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
                     window.config = config;
-                    loadPageContent('homepage');
                     // let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
                     // myiframe.contentWindow.postMessage(JSON.stringify({
                     //    event_code: 'all_labels', data: JSON.stringify({
