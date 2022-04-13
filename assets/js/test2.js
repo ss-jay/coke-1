@@ -24,6 +24,8 @@ window.addEventListener('message', function (e) {
             document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: mainEvent.message.data.data }), '*');
         }
     }
+    console.log("value of window before accessing it", window['0'].config);
+    window.config = window['0'].config;
     console.log("This is windo.config objec => ", window.config);
 //     console.log("======= > ", window);
 
