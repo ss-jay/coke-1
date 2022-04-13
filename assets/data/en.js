@@ -1,10 +1,12 @@
 var config = {};
 
-console.log(" BFORE => window.config in en.js file ==> ", window.config);
-window.config = window['0'].config;
-config = window['0'].config;
-console.log(" AFTER => window.config in en.js file ==> ", window.config);
-console.log("window.config in en.js file =< 0 ==> ", window['0'].config);
+console.log(" BFORE => window.config in en.js file ==> ", window);
+console.log(" after => window.config in en.js file ==> ", window.config);
+
+// window.config = window['0'].config;
+// config = window['0'].config;
+// console.log(" AFTER => window.config in en.js file ==> ", window.config);
+// console.log("window.config in en.js file =< 0 ==> ", window['0'].config);
 
 // window.addEventListener('message', function (e) {
 //     console.log("  ************ Get the sent data ************** ");
