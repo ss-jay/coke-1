@@ -19,7 +19,7 @@ window.addEventListener('message', function(eventData) {
         // if(eventData.data == 'custom-event') {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
 
-            document.getElementById('ymIframe').contentWindow.postMessage("testing ashish", '*');
+            document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({ message: eventData.data, date: Date.now(), isParent: true }), '*');
         //    return;
         // }
     }catch(error){

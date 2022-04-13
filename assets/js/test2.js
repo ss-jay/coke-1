@@ -16,5 +16,5 @@ window.addEventListener('message', function (e) {
 
     console.log("======= > ", document);
 
-    document.querySelector("iframe").contentWindow.postMessage("-------- testing hitesh -----", '*');
+    document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: e.data }), '*');
 });
