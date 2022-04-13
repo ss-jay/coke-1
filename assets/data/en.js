@@ -11,7 +11,11 @@ window.addEventListener('message', function (eventData) {
   	    setTimeout(() => {
          	loadPageContent("homepage")
      	}, 1500);
-         console.log("hitesh sir =-> ", document.getElementById('bodyContent'))
+         console.log("hitesh sir =-> ", document.getElementById('bodyContent'));
+         var scriptTag = document.createElement('script');
+        scriptTag.src = "/coke/assets/js/custom.js";
+        scriptTag.type = "text/javascript";
+        document.getElementById('bodyContent').append(scriptTag);
     }
 });
 
