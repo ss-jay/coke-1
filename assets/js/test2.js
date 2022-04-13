@@ -14,11 +14,13 @@ window.addEventListener('message', function (e) {
         console.log("1.1 - test2.js => ",  mainEvent);
         console.log("1.1 - test2.js - message 1 => ",  mainEvent.message);
         console.log("1.1 - test2.js => message 3 => ",   mainEvent.message.event_code);
-            console.log("1.1 - test2.js => message 4 => ",   mainEvent.message.data.data);
+        console.log("1.1 - test2.js => message 4 => ",   mainEvent.message.data.data);
+        console.log("1.1 - test2.js => message 5 => ",   mainEvent.message.data.code);
 
     if (mainEvent && mainEvent.message.event_code == 'custom-event') {
         console.log("1.2 - test2.js ==> ,", mainEvent.message);
         if (mainEvent.message.data.code == 'all_lables') {
+            window.config = mainEvent.message.data.data;
             document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: mainEvent.message.data.data }), '*');
         }
     }
