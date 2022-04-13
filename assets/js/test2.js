@@ -10,9 +10,8 @@ parent.postMessage(JSON.stringify({ message: 'Hello from iframe', date: Date.now
 
 
 window.addEventListener('message', function (e) {
-    console.log("1.1 => ", e.data);
     const mainEvent = JSON.parse(e.data);
-    
+        console.log("1.1 - test2.js => ", e.data);    
     if (mainEvent && mainEvent.event_code == 'custom-event') {
         if (mainEvent.data.code == 'all_lables') {
             document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: mainEvent.data.data }), '*');
