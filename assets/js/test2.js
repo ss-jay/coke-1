@@ -10,11 +10,10 @@ parent.addEventListener('message', function (e) {
 
 
 window.addEventListener('message', function (e) {
-    console.log("local test 2 file called --> ", e)
     console.log("local testing 2 ashish case 2 ", e.data);
-    console.log("======= > ", window);
+//     console.log("======= > ", window);
 
-    console.log("======= > ", document);
+//     console.log("======= > ", document);
 
     document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: e.data }), '*');
 });
