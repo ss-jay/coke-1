@@ -16,12 +16,12 @@ window.addEventListener('message', function(eventData) {
     console.log("test js file called");
     try{
         console.table( 'Data----------------->>>', eventData.data);
-        if(eventData.data == 'custom-event') {
+        // if(eventData.data == 'custom-event') {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
 
             document.getElementById('ymIframe').contentWindow.postMessage("testing ashish", '*');
-           return;
-        }
+        //    return;
+        // }
     }catch(error){
         console.log(error);
         return;
