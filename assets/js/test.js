@@ -47,7 +47,7 @@
 // })();
 
 
-var frame = document.getElementById("mainframe");
+var frame = document.getElementById("bodyCasontent");
 console.log("1 frame => " , frame);
 frame = frame ? frame.contentWindow : null;
 console.log("2 frame => " , frame)
