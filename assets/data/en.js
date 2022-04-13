@@ -1,13 +1,18 @@
 var config = {};
 
-window.addEventListener('message', function (e) {
-    console.log("  ************ Get the sent data ************** ");
-    const data = JSON.parse(e.data);
-    console.log("received data from parent iframe ", data);
-   
-});
+console.log(" BFORE => window.config in en.js file ==> ", window.config);
+window.config = window['0'].config;
+config = window['0'].config;
+console.log(" AFTER => window.config in en.js file ==> ", window.config);
+console.log("window.config in en.js file =< 0 ==> ", window['0'].config);
 
-console.log("window.config in en.js file ==> ", window.config);
+// window.addEventListener('message', function (e) {
+//     console.log("  ************ Get the sent data ************** ");
+//     const data = JSON.parse(e.data);
+//     console.log("received data from parent iframe ", data);
+   
+// });
+
 // console.log('This is config in ==> en.js file', config);
 
 // var config = {
