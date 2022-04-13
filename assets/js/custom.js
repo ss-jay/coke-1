@@ -1,9 +1,11 @@
 // Original ashish's code
-// (function () {
-//     setTimeout(() => {
-//         loadPageContent("homepage")
-//     }, 500);
-// })();
+
+(function () {
+    setTimeout(() => {
+        console.log("CONFIG VALUE ====> ", window.config);
+        loadPageContent("homepage")
+    }, 500);
+})();
 
 function loadPageContent(page) {
     if(page === "homepage") {
