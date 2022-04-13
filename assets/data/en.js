@@ -1,14 +1,10 @@
 var config = {};
 
 window.addEventListener('message', function (e) {
-    // Get the sent data
     console.log("Get the sent data ", e);
-
     const data = e.data;
     console.log("received data from parent iframe ", data);
-    // If you encode the message in JSON before sending them,
-    // then decode here
-    // const decoded = JSON.parse(data);
+   
 });
 
 console.log('This is config in ==> en.js file', config);

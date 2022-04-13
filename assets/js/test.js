@@ -16,7 +16,6 @@ window.addEventListener('message', function(eventData) {
     console.log('onload---->')
     console.log(eventData);
     try{
-
         console.error( 'Data----------------->>>',eventData.data);
         if(eventData.data == 'custom-event') {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
