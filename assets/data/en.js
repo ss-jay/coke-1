@@ -1,4 +1,4 @@
-var config = {};
+// var config = {};
 
 window.addEventListener('message', function (eventData) {
     console.log("Get the sent data ", eventData);
@@ -14,12 +14,12 @@ window.addEventListener('message', function (eventData) {
         scriptTag.type = "text/javascript";
         document.getElementById('bodyContent').append(scriptTag);
         setTimeout(() => {
-            loadPageContent("homepage")
+            loadPageContent("homepage", parsedEventData)
         }, 1500);
     }
 });
 
-console.log('This is config in ==> en.js file', config);
+// console.log('This is config in ==> en.js file', config);
 
 // var config = {
 //     "search" : {

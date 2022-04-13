@@ -6,8 +6,9 @@
 //         loadPageContent("homepage")
 //     }, 500);
 // })();
-
-function loadPageContent(page) {
+var config = {};
+function loadPageContent(page, data) {
+    config = data;
     console.log("page -- > ", page);
     if(page === "homepage") {
         insertSearchBar();
