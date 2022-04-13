@@ -11,6 +11,7 @@ window.addEventListener('message', function (eventData) {
   	    setTimeout(() => {
          	loadPageContent("homepage")
      	}, 1500);
+         console.log("hitesh sir =-> ", document.getElementById('bodyContent'))
     }
 });
 
