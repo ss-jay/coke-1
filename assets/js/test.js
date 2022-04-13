@@ -1,9 +1,9 @@
 
 (function () {
     setTimeout(() => {
-      console.log("This is custom.js file");
+      console.log("This is test.js file");
       window.addEventListener('message', function (eventData) {
-        console.log("CHECKING FOR EVENT : Custom");
+        console.log("CHECKING FOR EVENT : TEST");
         console.log(eventData);
         try {
             const mainEvent = JSON.parse(eventData.data);
