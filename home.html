@@ -41,6 +41,9 @@
 // 		console.log("RECEIVED message from PARENT TO CHILD", data);
 		var config = data.date;
 		window.config = config;
+		console.log("34.67 => hotme.html", window.config);
+		console.log("35 => hotme.html", window['0'].config);
+		      	     	window.config = window['0'].config
 // 		document.getElementById("bodyCasontent").innerText = data;
 	      });
 
