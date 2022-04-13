@@ -5,4 +5,4 @@ let message = JSON.stringify({
     date: Date.now(),
 });
 
-frameEle.contentWindow.postMessage(message, '*');
+frameEle.contentWindow.postMessage(message, 'https://ss-jay.github.io/');
