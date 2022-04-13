@@ -59,7 +59,6 @@ console.log("3 frame.contentWindow => " , frame.contentWindow)
   window.addEventListener("message", (e) => {
         var data = e.data;
         console.log(" Event data ===> ", e);
-      console.log(" JSON parse Event data ===> ", JSON.parse(e));
         if(data === "shakehand") {
           console.log("SHAKEHAND RECEIVED FROM CHILD")
           frame.postMessage("HARE AND NOW THIS TEXT IS BEING SENT TO CHILD", "*");
