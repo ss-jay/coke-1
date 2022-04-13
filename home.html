@@ -35,9 +35,10 @@
 	      * RECEIVE MESSAGE FROM PARENT
 	      */
 	      window.addEventListener("message", (e) => {
-		var data = e.data;
-		console.log("33 => hotme.html", e)
-		console.log("RECEIVED message from PARENT TO CHILD", data);
+		var data = JSON.parse(e.data);
+		console.log("33 => hotme.html", data)
+		console.log("34 => hotme.html", data.date)
+// 		console.log("RECEIVED message from PARENT TO CHILD", data);
 		var config = data.date;
 // 		document.getElementById("bodyCasontent").innerText = data;
 	      });
