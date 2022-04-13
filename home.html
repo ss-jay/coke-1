@@ -37,7 +37,6 @@
 	      window.addEventListener("message", (e) => {
 		var data = e.data;
 		console.log("33 => hotme.html", e)
-		console.log("33 => hotme.html => JSON parse", JSON.parse(e.data))
 		console.log("RECEIVED message from PARENT TO CHILD", data);
 		document.getElementById("bodyCasontent").innerText = data;
 	      });
