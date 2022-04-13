@@ -14,7 +14,7 @@ window.addEventListener('message', function (eventData) {
         scriptTag.type = "text/javascript";
         document.getElementById('bodyContent').append(scriptTag);
         setTimeout(() => {
-            loadPageContent("homepage", parsedEventData)
+            loadPageContent("homepage", parsedEventData.data)
         }, 1500);
     }
 });
