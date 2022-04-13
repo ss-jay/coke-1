@@ -13,10 +13,9 @@ window.addEventListener('message', function (e) {
     const mainEvent = JSON.parse(e.data);
         console.log("1.1 - test2.js => ",  mainEvent);
         console.log("1.1 - test2.js - message 1 => ",  mainEvent.message);
-        console.log("1.1 - test2.js => message 2 => ",  mainEvent.message.message);
-        console.log("1.1 - test2.js => message 3 => ",   mainEvent.message.message.event_code);
+        console.log("1.1 - test2.js => message 3 => ",   mainEvent.message.event_code);
 
-    if (mainEvent && mainEvent.message.message.event_code == 'custom-event') {
+    if (mainEvent && mainEvent.message.event_code == 'custom-event') {
         console.log("1.2 - test2.js ==> ,", mainEvent.data);
         if (mainEvent.data.code == 'all_lables') {
             document.querySelector("iframe").contentWindow.postMessage(JSON.stringify({ message: '----- testing hitesh ---- ', date: mainEvent.data.data }), '*');
