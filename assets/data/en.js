@@ -4,18 +4,18 @@ window.addEventListener('message', function (eventData) {
     console.log("Get the sent data ", eventData);
     const parsedEventData = JSON.parse(eventData.data)
     console.log("received data from parent iframe ", parsedEventData);
-    if(parsedEventData.event_code === "custom-child-client-event") {
+    if (parsedEventData.event_code === "custom-child-client-event") {
         console.log("\n\n\n\n\n\n\n HEYYYYYYYYYYYYYYYYYYY \n\n\n\n\n\n\n\n");
         console.log(parsedEventData);
-	    window.config = parsedEventData.data;
-  	    setTimeout(() => {
-         	loadPageContent("homepage")
-     	}, 1500);
-         console.log("hitesh sir =-> ", document.getElementById('bodyContent'));
-         var scriptTag = document.createElement('script');
+
+        console.log("hitesh sir =-> ", document.getElementById('bodyContent'));
+        var scriptTag = document.createElement('script');
         scriptTag.src = "/coke/assets/js/custom.js";
         scriptTag.type = "text/javascript";
         document.getElementById('bodyContent').append(scriptTag);
+        setTimeout(() => {
+            loadPageContent("homepage")
+        }, 1500);
     }
 });
 
@@ -189,6 +189,6 @@ console.log('This is config in ==> en.js file', config);
 //             ] 
 //         }
 //     ]
-    
-    
+
+
 // };

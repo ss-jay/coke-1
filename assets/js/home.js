@@ -1,6 +1,6 @@
 $(function () {
-    $("#bodyContent").load("/coke//views/body.html");
-    $("#checkoutcart").load("/coke//views/checkout.html");
+    // $("#bodyContent").load("/coke//views/body.html");
+    // $("#checkoutcart").load("/coke//views/checkout.html");
     
 });
 

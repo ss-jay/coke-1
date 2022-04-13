@@ -1,13 +1,14 @@
-// Original ashish's code
+// // Original ashish's code
 
-(function () {
-    setTimeout(() => {
-        console.log("CONFIG VALUE ====> ", window.config);
-        loadPageContent("homepage")
-    }, 500);
-})();
+// (function () {
+//     setTimeout(() => {
+//         console.log("CONFIG VALUE ====> ", window.config);
+//         loadPageContent("homepage")
+//     }, 500);
+// })();
 
 function loadPageContent(page) {
+    console.log("page -- > ", page);
     if(page === "homepage") {
         insertSearchBar();
         insertTabContainer();
@@ -20,6 +21,7 @@ function loadPageContent(page) {
 
 function insertSearchBar() {
     console.log("value of config -- > ", config);
+    console.log("document.getElementById('search_input') --> ", document.getElementById("search_input"))
     document.getElementById("search_input").placeholder = config.search.placeholder;
 }
 
