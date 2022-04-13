@@ -9,22 +9,15 @@
 
 
 
-window.addEventListener('message', function (e) {
-    console.log("local test 2 file called --> ", e)
-    console.log("local testing 2 ashish case 2 ", e.data);
-    console.log("======= > ", window);
-
-    console.log("======= > ", document);
-    if(e.event_code === "ym-client-event" && e.data.event.code === "configuration") {
+window.addEventListener('message', function (eventData) {
+    console.log("local test 2 file called --> ", eventData.data);
+    let parsedEventData = JSON.parse(eventData.data);
+    console.log("local testing 2 ashish case 2 ", parsedEventData.data);
+    if(parsedEventData.event_code === "custom-parent-client-event" && parsedEventData.data) {
+        console.log("innner iframe called with parsed Data ---> ", parsedEventData.data);
         document.querySelector("iframe").contentWindow.postMessage({
-            event_code: 'custom-client-event',
-            data: {
-                event: {
-                    code: "configuration",
-                    data: e.data.event.data
-                }
-            }
+            event_code: 'custom-child-client-event',
+            data: parsedEventData.data
         }, '*');
     }
-    
 });

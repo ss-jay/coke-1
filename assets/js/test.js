@@ -19,15 +19,10 @@ window.addEventListener('message', function (eventData) {
         let parsedData = JSON.parse(eventData.data)
         if (parsedData?.event_code == 'custom-event' && parsedData?.data?.code == "all_lables") {
             console.log("document.getElementById('ymIframe') --> ", document.getElementById('ymIframe'));
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                        code: "configuration",
-                        data: parsedData.data.data
-                    }
-                }
-            }, '*');
+            document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
+                event_code: 'custom-parent-client-event',
+                data: parsedData.data.data
+            }), '*');
             return;
         }
     } catch (error) {
