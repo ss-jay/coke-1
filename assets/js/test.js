@@ -21,6 +21,9 @@
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
                     parent.window.config = config;
+                    const bodyContent = document.getElementById('bodyCasontent');
+                    console.log('This is bodyContent in test.js file', bodyContent);
+                   
 //                     let myiframe = window.frames['ymIframe'].document.getElementById('webviewId');
 //                     myiframe.contentWindow.postMessage(JSON.stringify({
 //                         event_code: 'all_labels', data: JSON.stringify({
