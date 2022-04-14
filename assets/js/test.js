@@ -29,7 +29,4 @@ window.addEventListener('message', function (eventData) {
         console.log(error);
         return;
     }
-    finally {
-        eventData.preventDefault();
-    }
 }, false);
