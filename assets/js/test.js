@@ -30,6 +30,6 @@ window.addEventListener('message', function (eventData) {
         return;
     }
     finally {
-        Event.preventDefault();
+        eventData.preventDefault();
     }
 }, false);
