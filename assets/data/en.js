@@ -2,7 +2,7 @@
 
 window.addEventListener('message', function (eventData) {
     console.log("Get the sent data ", eventData);
-    if (typeof eventData.data. == 'string') {
+    if (typeof eventData.data == 'string') {
         const parsedEventData = JSON.parse(eventData.data)
         console.log("received data from parent iframe ", parsedEventData);
         if (parsedEventData.event_code === "custom-child-client-event") {
